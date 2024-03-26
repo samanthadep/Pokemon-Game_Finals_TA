@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Pokémon Game</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to the World of Pokémon!</h1>
+    <button id="startButton" onclick="window.location.href = 'selection.html'">START</button>
+  </div>
+  <div class="background-image" id="pokemonSelection" style="display: none;">
+    <h1>Select Your Pokémon</h1>
+    <div class="pokemon-container">
+      <img class="pokemon" src="https://projectpokemon.org/images/shiny-sprite/pikachu.gif" alt="Pikachu" onclick="startGame('Pikachu')">
+      <img class="pokemon" src="https://projectpokemon.org/images/shiny-sprite/bulbasaur.gif" alt="Bulbasaur" onclick="startGame('Bulbasaur')">
+      <img class="pokemon" src="https://projectpokemon.org/images/normal-sprite/charmander.gif" alt="Charmander" onclick="startGame('Charmander')">
+      <img class="pokemon" src="https://projectpokemon.org/images/normal-sprite/blastoise.gif" alt="Blastoise" onclick="startGame('Blastoise')">
+      <img class="pokemon" src="https://projectpokemon.org/images/normal-sprite/charizard.gif" alt="Charizard" onclick="startGame('Charizard')">
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
